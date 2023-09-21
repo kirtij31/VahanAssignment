@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/university_name"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="RTU"
+        android:background="@color/grey" />
+
+    <TextView
+        android:id="@+id/university_country"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="Rajasthan"
+        android:background="@color/grey"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"/>
+
+    <TextView
+        android:id="@+id/university_website"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="www.rtu.ac.in"
+        android:background="@color/grey"/>
+
+</LinearLayout>
