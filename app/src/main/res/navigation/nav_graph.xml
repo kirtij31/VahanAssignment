@@ -12,6 +12,7 @@
 
     <fragment
         android:id="@+id/fragment_webView"
+        android:label="WebView"
         android:name="com.kirti.vahanassignment.fragments.WebViewFragment"
         tools:layout="@layout/fragment_web_view"/>
 

@@ -16,7 +16,7 @@ class WebViewFragment : Fragment() {
         super.onCreate(savedInstanceState)
     }
 
-    lateinit var binding: FragmentWebViewBinding
+    private lateinit var binding: FragmentWebViewBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -25,10 +25,12 @@ class WebViewFragment : Fragment() {
         // Inflate the layout for this fragment
         binding = FragmentWebViewBinding.inflate(layoutInflater)
 
+
         val url = arguments?.getString("url")
         if (url != null) {
             binding.webView.loadUrl(url)
         }
+
         return binding.root
     }
 

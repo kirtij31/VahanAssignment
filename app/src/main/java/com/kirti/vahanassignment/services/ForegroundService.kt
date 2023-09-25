@@ -13,13 +13,12 @@ import com.kirti.vahanassignment.R
 
 class ForegroundService : Service() {
     override fun onBind(p0: Intent?): IBinder? {
-        TODO("Not yet implemented")
+        return null
     }
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
 
-
-            val channel = NotificationChannel("1", "basic", NotificationManager.IMPORTANCE_DEFAULT)
+            val channel = NotificationChannel("1",resources.getString(R.string.service_notification), NotificationManager.IMPORTANCE_DEFAULT)
             val manager = getSystemService(NOTIFICATION_SERVICE) as NotificationManager
             manager.createNotificationChannel(channel)
 
@@ -28,9 +27,9 @@ class ForegroundService : Service() {
 
 
         val notification = NotificationCompat.Builder(this, "1")
-            .setContentTitle("Refresh")
-            .setContentText("10sec")
-            .setSmallIcon(R.drawable.ic_launcher_foreground)
+            .setContentTitle(resources.getString(R.string.title))
+            .setContentText(resources.getString(R.string.content_text))
+            .setSmallIcon(R.drawable.ic_vahan)
             .setContentIntent(pendingIntent)
             .build()
         startForeground(1, notification)

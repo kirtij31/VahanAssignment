@@ -2,4 +2,8 @@
     <string name="app_name">VahanAssignment</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="error_message">Failed to load data....Try again later</string>
+    <string name="service_notification">service_notification</string>
+    <string name="title">Foreground Service Notification</string>
+    <string name="content_text">Refreshing in every 10 seconds</string>
 </resources>
